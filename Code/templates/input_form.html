@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- boostrap link start -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+       <!-- boostrap link end -->
+    <title>Intervension</title>
+</head>
+<body>
+  <section>
+    <nav class="navbar navbar-expand-sm bg-body-secondary ">
+        <div class="container-fluid ">
+            <ul class="navbar-nav " style="margin-left: 65%;">
+        <a class="nav-link" href="data.html"> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="analysis.html" target="_blank">Analysis</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="policies.html" target="_blank">Policies</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="input_form.html" target="_blank">Intervension</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="faqs.html" target="_blank">FAQs</a>
+    </li>
+</ul>
+  </div>
+</nav>
+    </section>
+    <section>
+       
+          <div class="container">
+          <h1 >State-wise Dropout Analysis</h1>
+          <p>State-by-state dropout analysis is a technique for assessing and comprehending dropout rates in educational institutions or programmes across many states or regions. It entails looking at the number of students who drop out before finishing their education and detecting trends, causes, and discrepancies between states. Economic factors, educational policy, and societal demography can all have an impact on dropout rates. This research assists policymakers and educators in developing targeted interventions and strategies to minimise dropouts and enhance educational outcomes, ensuring that kids in all states have equitable access to excellent education and opportunity for success.
+          <br><br>  We understand that educational journeys sometimes take unexpected twists, and that individuals may want guidance and help after taking a break from their studies. If you know someone who has just taken a vacation from their studies and is searching for advice, please fill out this form to help them get the assistance they need. Our objective is to provide them with knowledge, resources, and guidance in correctly navigating their educational path.<br><br>
+              After completing the form, our dedicated staff will review the information provided. The gap year participant will then be contacted as quickly as possible to provide information, resources, and assistance based on their needs and circumstances.<br><br>
+  The objective of this form is to give anyone with necessary support and direction.
+          </p>
+          <form action="form" method="POST">
+
+            <div class="row">
+                <div class="col-sm-8">
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Student Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Full name" name="name" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="age" class="form-label">Age :</label>
+            <input type="number" class="form-control" id="age"  name="age" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="gender" class="form-label">Gender:</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="Male" name="gender" value="Male" checked>Male
+                <label class="form-check-label" for="male"></label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="Female" name="gender" value="Female">Female
+                <label class="form-check-label" for="Female"></label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="other" name="gender" value="other">Other
+                <label class="form-check-label" for="other"></label>
+              </div>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Phone Number:</label>
+          <input type="number" class="form-control" id="no" placeholder="Enter your Phone Number" name="no" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="standard" class="form-label">Your Relation with the Student:</label>
+        <select class="form-select" name='relation'>
+            <option>Student itself</option>
+            <option>Parent</option>
+            <option>Family</option>
+            <option>Relative</option>
+            <option>Friend</option>
+          </select>
+        </div>
+        <label for="comment">Description:</label>
+<textarea class="form-control" rows="5" id="comment" name="description"></textarea>
+        
+<button type="button" class="btn btn-outline-danger mt-5" data-bs-toggle="modal" data-bs-target="#myModal">
+ Submit
+</button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+  <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title"> Your Response has been Submitted. <br></h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+     A agent will soon contact you.<br>Thank You
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer mt-5">
+      <a href="{{ url_for('form') }}" class="btn btn-outline-danger ">Close</a>
+    </div>
+
+  </div>
+</div>
+</div>
+
+    </div>
+    </div>
+      </form>
+    </div>
+    </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid bg-dark mt-5"  id="last">
+            <div class="row" style="font-size: 20px; color: aliceblue;">
+
+                <div class="col">
+                    <pre>
+          <a href="index.html"  class="text-white text-decoration-none">About Us    </a>
+          <a href="analysis.html"  class="text-white text-decoration-none">Info   </a>
+          <a href="input_form.html"  class="text-white text-decoration-none">Contact Us   </a>
+          <a href="faqs.html" class="text-white  text-decoration-none">FAQs  </a></pre>
+                </div>
+
+                <div class="col">
+                    <pre>
+          <a href="index.html"  class="text-white text-decoration-none">Home    </a>
+          <a href="analysis.html"  class="text-white text-decoration-none">Analysis    </a>
+          <a href="input_form.html"  class="text-white text-decoration-none">Form   </a>
+          <a href="faqs.html" class="text-white  text-decoration-none">FAQs  </a></pre>
+                </div>
+
+
+                <div class="col-md-5" style="margin-right: 10%;">
+
+                    Newsletter stay updated with our latest schemes<br>
+
+                    <div class="input-group mt-4">
+                        <input type="email" class="form-control" placeholder="Email ">
+                        <button class="btn btn-danger" type="EmaiL">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Footer -->
+
+
+</body>
+</html>
