@@ -12,10 +12,3 @@ Institute Code (AISHE): U-1077
 
 Institute Name: ITM (SLS) BARODA UNIVERSITY,
 VADODARA
- 
-
-
-## Team members
-
-- Team Leader Name: Mohit Dixit
-Branch: B.TECH - II
